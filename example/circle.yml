@@ -1,0 +1,8 @@
+#
+# add this command to your circle.yml for circleci.com
+#
+deployment:
+  production:
+    branch: master
+    commands:
+      - node deploy
