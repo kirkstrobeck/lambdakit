@@ -1,5 +1,5 @@
 {
-  "name": "example api",
+  "name": "example-api",
   "version": "1.0.0",
   "description": "example lambda api repo",
   "main": "index.js",

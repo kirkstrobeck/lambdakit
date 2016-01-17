@@ -6,6 +6,12 @@
   "scripts": {
     "test": "semistandard"
   },
+  "bugs": {
+    "url" : "https://github.com/kirkstrobeck/lambdakit/issues"
+  },
+  "engines" : {
+    "node" : ">=0.12.9"
+  },
   "author": "https://github.com/kirkstrobeck/lambdakit/graphs/contributors",
   "license": "ISC",
   "dependencies": {
@@ -16,6 +22,11 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1"
   },
+  "repository" : "kirkstrobeck/lambdakit",
+  "homepage": "https://github.com/kirkstrobeck/lambdakit",
+  "keywords": [
+    "aws", "amazon", "lambda", "serverless", "utility", "tools", "kit"
+  ],
   "semistandard": {
     "ignore": [
       "**/node_modules/**"
