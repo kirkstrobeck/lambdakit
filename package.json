@@ -1,16 +1,16 @@
 {
   "name": "lambdakit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A strategy for working with lambdas.",
   "main": "index.js",
   "scripts": {
     "test": "semistandard"
   },
   "bugs": {
-    "url" : "https://github.com/kirkstrobeck/lambdakit/issues"
+    "url": "https://github.com/kirkstrobeck/lambdakit/issues"
   },
-  "engines" : {
-    "node" : ">=0.12.9"
+  "engines": {
+    "node": ">=0.12.9"
   },
   "author": "https://github.com/kirkstrobeck/lambdakit/graphs/contributors",
   "license": "ISC",
@@ -19,13 +19,20 @@
     "aws-cli": "0.0.1",
     "es6-promise": "^3.0.2",
     "filesize": "^3.1.5",
+    "lodash": "^4.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1"
   },
-  "repository" : "kirkstrobeck/lambdakit",
+  "repository": "kirkstrobeck/lambdakit",
   "homepage": "https://github.com/kirkstrobeck/lambdakit",
   "keywords": [
-    "aws", "amazon", "lambda", "serverless", "utility", "tools", "kit"
+    "aws",
+    "amazon",
+    "lambda",
+    "serverless",
+    "utility",
+    "tools",
+    "kit"
   ],
   "semistandard": {
     "ignore": [

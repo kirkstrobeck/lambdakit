@@ -24,7 +24,7 @@ node node_modules/lambdakit --run=weather
 
 ### Config
 
-1. Add this to `package.json` (You can omit if your values are the same as these are defaults).
+1) Add this to `package.json` (You can omit if your values are the same as these are defaults).
 
 ```json
 "lambdakit": {
@@ -36,16 +36,16 @@ node node_modules/lambdakit --run=weather
 - `region` the AWS region where your Lambdas reside
 - `path-to-lambdas` is the path to the folder that holds the lambdas. Currently each folder that holds lambda contents needs to match the lambda name in AWS.
 
-2. Add `config.lambdakit.js` for local deploy (You can omit if using [local cli config](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration). Contents:
+2) Add `config.lambdakit.js` for local deploy (You can omit if using [local cli config](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration). Contents:
 
 ```js
 process.env.AWS_ACCESS_KEY_ID = 'XXX';
 process.env.AWS_SECRET_ACCESS_KEY = 'XXX';
 ```
 
-2b. To deploy on commit from your CI server, install credentials on your project in the CI settings. In the case of [CircleCI](https://circleci.com), it’s done with a URI similar to `https://circleci.com/gh/myOrg/myProject/edit#aws`
+2b) To deploy on commit from your CI server, install credentials on your project in the CI settings. In the case of [CircleCI](https://circleci.com), it’s done with a URI similar to `https://circleci.com/gh/myOrg/myProject/edit#aws`
 
-3. Update your `.gitignore` to include the following, as your nested lambdas will be projects in and of themselves.
+3) Update your `.gitignore` to include the following, as your nested lambdas will be projects in and of themselves.
 
 ```bash
 **/node_modules/**
