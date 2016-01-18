@@ -14,12 +14,22 @@ All assets within the lambda are wrapped up in a ZIP and pushed. Node modules ca
 
 ### Usage
 
-This project has a detailed example in `./example`. To run the example, `cd` into that directory and `npm_install` and run commands from there.
+This project has a detailed example in `./example`. To run the example, `cd` into that directory, `npm_install`, run commands from there.
 
-To run a Lambda
+#### Run
+
+To run a Lambda, make a file called `event.js` that consists of `module.exports` of whatever input you’d give the lambda, which is often just JSON, then use the run command below with the name of the folder (and lambda).
 
 ```bash
 node node_modules/lambdakit --run=weather
+```
+
+#### Deploy
+
+To deploy, simply have the config in place (see below), then run the following command. It will `npm install` inside each lambda, wrap it up in a ZIP, then inject it into your AWS stack, *BAM*! Currently it rolls thru all lambdas.
+
+```bash
+node node_modules/lambdakit --deploy
 ```
 
 ### Config
@@ -56,4 +66,5 @@ process.env.AWS_SECRET_ACCESS_KEY = 'XXX';
 ## Roadmap
 
 - Test coverage
+- Deploy a single lambda
 - Compare diff to only push changed lambdas

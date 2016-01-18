@@ -1,2 +1,3 @@
 console.log('==Lambdakit==');
-require('./lib/' + Object.keys(require('minimist')(process.argv.slice(2)))[1]);
+const args = require('minimist')(process.argv.slice(2));
+require('./lib/' + Object.keys(args)[1]);
