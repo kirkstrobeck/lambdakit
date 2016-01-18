@@ -1,8 +1,8 @@
 # Lambda kit
 
-**A strategy for working with lambdas.**
+![](http://i.giphy.com/X35necnRanNG8.gif)
 
-**What it does**
+**A strategy for working with lambdas.**
 
 - Run Lambdas locally
 - Deploy all Lambdas locally
