@@ -12,8 +12,6 @@ This is an opinionated setup for your API, where lambdas reside together. Obviou
 
 ### Usage
 
-Install
-
 ```bash
 npm install lambdakit
 ```
