@@ -12,6 +12,12 @@ This is an opinionated setup for your API, where lambdas reside together. Obviou
 
 ### Usage
 
+Install
+
+```bash
+npm install lambdakit
+```
+
 This project has a detailed example in `./example`. To run the example, `cd` into that directory, `npm_install`, and run commands from there.
 
 #### Run
