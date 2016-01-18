@@ -57,7 +57,7 @@ process.env.AWS_ACCESS_KEY_ID = 'XXX';
 process.env.AWS_SECRET_ACCESS_KEY = 'XXX';
 ```
 
-2b) To deploy on commit from your CI, install creds on your project in the CI settings. In the case of [CircleCI](https://circleci.com), it’s done at the URI pattern `https://circleci.com/gh/myOrg/myProject/edit#aws`
+2b) To deploy on commit from your CI, install creds on your project in the CI settings. In the case of [CircleCI](https://circleci.com), it’s done at the URI pattern `https://circleci.com/gh/myOrg/myProject/edit#aws`. See the `/example/circle.yml` for the CI command.
 
 3) You’ll want to update your `.gitignore` to include the following, as your nested lambdas will be projects in and of themselves
 
