@@ -28,10 +28,13 @@ node node_modules/lambdakit --run=weather
 
 #### Deploy
 
-To deploy, simply have the config in place (see below), then run the following command. It will `npm install` inside each lambda, wrap it all up in a ZIP, then inject it into your AWS stack, *BAM!* Currently it rolls thru all lambdas.
+To deploy, simply have the config in place (see below), then run the following command. It will `npm install` inside each lambda, wrap it all up in a ZIP, then inject it into your AWS stack, *BAM!*
 
 ```bash
+# roll thru all lambdas
 node node_modules/lambdakit --deploy
+# deploy a specific lambda (ie. weather)
+node node_modules/lambdakit --deploy=weather
 ```
 
 Note: node modules can easily be added to each lambda. Packages that require more advanced processing may need to be [compiled against lambda infrastucture](https://aws.amazon.com/blogs/compute/nodejs-packages-in-lambda/), but this is rare. Keep in mind, there are a [few](https://medium.com/@kirkstrobeck/aws-lambda-node-modules-176f89471364) built-in node modules that are available.
