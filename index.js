@@ -17,7 +17,7 @@ $.Promise = require('es6-promise').Promise;
 $.root = __dirname + '/../..';
 
 $.packageJson = require($.root + '/package.json');
-try { require($.root + '/config.aws.lambda.js'); } catch (e) {}
+try { require($.root + '/config.aws.lambdakit.js'); } catch (e) {}
 
 $.AWS.config.region = $._.result($.packageJson, 'lambdakit.region', 'us-east-1');
 $.pathToLambdas = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-lambdas\']', '/lib/lambdas');
