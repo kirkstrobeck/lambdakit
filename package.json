@@ -10,7 +10,7 @@
     "url": "https://github.com/kirkstrobeck/lambdakit/issues"
   },
   "engines": {
-    "node": ">=0.12.9"
+    "node": "v0.10.36"
   },
   "author": {
     "name": "https://github.com/kirkstrobeck/lambdakit/graphs/contributors"
@@ -21,9 +21,11 @@
     "aws-sdk": "^2.2.30",
     "es6-promise": "^3.0.2",
     "filesize": "^3.1.5",
+    "fs-extra": "^0.26.5",
     "lodash": "^4.0.0",
     "minimist": "^1.2.0",
-    "mkdirp": "^0.5.1"
+    "mkdirp": "^0.5.1",
+    "strict-version": "0.0.2"
   },
   "repository": {
     "type": "git",
@@ -43,5 +45,6 @@
     "ignore": [
       "**/node_modules/**"
     ]
-  }
+  },
+  "engine-strict": true
 }
