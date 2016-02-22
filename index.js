@@ -25,9 +25,12 @@ $.pathToShared = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-shared\
 
 $.pathToLambda = $.pathToLambdas + '/' + $.argv.run || null;
 
-$.lambdaDirs = (typeof $.argv['deploy'] === 'string')
-  ? [$.argv['deploy']]
-  : $.fs.readdirSync($.pathToLambdas) || null;
+if (typeof $.argv['deploy'] === 'string') {
+  $.lambdaDirs = [$.argv['deploy']];
+} else {
+  $.lambdaDirs = $.fs.readdirSync($.pathToLambdas) || null;
+  if ($.lambdaDirs[0] === '.DS_Store') $.lambdaDirs.splice(0, 1);
+}
 
 $.exportDir = $.root + '/exports';
 
