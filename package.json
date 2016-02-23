@@ -1,6 +1,6 @@
 {
   "name": "lambdakit",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A strategy for working with lambdas.",
   "main": "index.js",
   "scripts": {
