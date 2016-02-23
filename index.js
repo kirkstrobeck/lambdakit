@@ -11,6 +11,7 @@ $.AWS = require('aws-sdk');
 $.exec = require('child_process').exec;
 $.filesize = require('filesize');
 $.fs = require('fs-extra');
+$.git = require('git-rev-sync');
 $.mkdirp = require('mkdirp');
 $.Promise = require('es6-promise').Promise;
 
@@ -22,6 +23,7 @@ try { require($.root + '/config.aws.lambdakit.js'); } catch (e) {}
 $.AWS.config.region = $._.result($.packageJson, 'lambdakit.region', 'us-east-1');
 $.pathToLambdas = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-lambdas\']', '/lib/lambdas');
 $.pathToShared = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-shared\']', '/lib/shared');
+$.prefixWithBranchName = $.root + $._.result($.packageJson, 'lambdakit[\'prefix_with_branch_name\']', true);
 
 if (typeof $.argv['deploy'] === 'string') {
   $.lambdaDirs = [$.argv['deploy']];

@@ -47,13 +47,15 @@ Note: node modules can easily be added to each lambda. Packages that require mor
 "lambdakit": {
   "region": "us-east-1",
   "path-to-lambdas": "/lib/lambdas",
-  "path-to-lambdas": "/lib/shared"
+  "path-to-lambdas": "/lib/shared",
+  "prefix_with_branch_name": true
 }
 ```
 
-- `region` the AWS region where your lambdas reside
-- `path-to-lambdas` is the path to the folder that holds the lambdas. Currently each folder that holds lambda contents needs to match the lambda name in AWS.
-- `path-to-shared` (optional) is the path to a shared resources folder that will get copied to the root of each applicable lambda on deploy and run.
+- `region`: the AWS region where your lambdas reside
+- `path-to-lambdas`: is the path to the folder that holds the lambdas. Currently each folder that holds lambda contents needs to match the lambda name in AWS.
+- `path-to-shared`: (optional) is the path to a shared resources folder that will get copied to the root of each applicable lambda on deploy and run.
+- `prefix_with_branch_name`: (bool) If you are on the branch `beta`, then the lambda `weather` will deploy to `beta-weather`. This supports a branch-based stage strategy. You will need to create lambdas named for each branch/stage that deploys on AWS.
 
 2) Add `config.aws.lambdakit.js` for local deploy (You can omit if using [local cli config](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-quick-configuration)
 
