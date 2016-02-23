@@ -23,8 +23,6 @@ $.AWS.config.region = $._.result($.packageJson, 'lambdakit.region', 'us-east-1')
 $.pathToLambdas = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-lambdas\']', '/lib/lambdas');
 $.pathToShared = $.root + $._.result($.packageJson, 'lambdakit[\'path-to-shared\']', '/lib/shared');
 
-$.pathToLambda = $.pathToLambdas + '/' + $.argv.run || null;
-
 if (typeof $.argv['deploy'] === 'string') {
   $.lambdaDirs = [$.argv['deploy']];
 } else {
