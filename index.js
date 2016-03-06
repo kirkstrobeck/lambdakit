@@ -1,6 +1,8 @@
 'use strict';
 
-console.log('==Lambdakit==');
+require('strict-version');
+
+console.log('=== LAMBDAKIT ===');
 
 var $ = GLOBAL.$ = {};
 
