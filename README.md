@@ -4,6 +4,8 @@
 
 **A strategy for working with lambdas.**
 
+[![Circle CI](https://circleci.com/gh/kirkstrobeck/lambdakit.svg?style=svg)](https://circleci.com/gh/kirkstrobeck/lambdakit)
+
 - Run lambdas locally
 - Deploy lambdas locally
 - Deploy lambdas via CI
