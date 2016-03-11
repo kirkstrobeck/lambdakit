@@ -1,6 +1,6 @@
 {
   "name": "lambdakit",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A strategy for working with lambdas.",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
     "lodash": "^4.0.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "strict-version": "0.0.2"
+    "strict-version": "latest"
   },
   "repository": {
     "type": "git",
